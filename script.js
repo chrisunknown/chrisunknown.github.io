@@ -92,6 +92,27 @@
     track.scrollTo({ left: activeIndex * track.clientWidth, behavior: 'auto' });
   });
 
+  // Touch swipes move the track natively (no wheel event fires), so the
+  // wheel/keydown/dock handlers above never run for them. Without this,
+  // every section past the first one stays invisible on mobile because
+  // .reveal only gets its play class from setActiveIndex(). Watch native
+  // scroll and sync once it settles, so swiping reveals content and keeps
+  // the dock/glow in sync too.
+  var scrollSyncTimeout = null;
+  track.addEventListener(
+    'scroll',
+    function () {
+      clearTimeout(scrollSyncTimeout);
+      scrollSyncTimeout = setTimeout(function () {
+        var nearest = Math.round(track.scrollLeft / track.clientWidth);
+        if (nearest !== activeIndex) {
+          setActiveIndex(nearest);
+        }
+      }, 120);
+    },
+    { passive: true }
+  );
+
   // Reveal the first (intro) section immediately on load.
   setActiveIndex(0);
 

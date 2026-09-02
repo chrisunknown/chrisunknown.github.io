@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>EARL. — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="experience" id="experience">
+    <div class="glow" id="glow"></div>
+
+    <!-- Left icon dock — sole navigation -->
+    <nav class="dock" id="dock" aria-label="Section navigation">
+      <button type="button" class="dock-icon active" data-index="0" aria-label="Intro" title="Intro">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 4h4v4H4V4Zm6 0h4v4h-4V4Zm6 0h4v4h-4V4ZM4 10h4v4H4v-4Zm6 0h4v4h-4v-4Zm6 0h4v4h-4v-4ZM4 16h4v4H4v-4Zm6 0h4v4h-4v-4Zm6 0h4v4h-4v-4Z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <button type="button" class="dock-icon" data-index="1" aria-label="About" title="About">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8Zm-7 8a7 7 0 0 1 14 0" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <button type="button" class="dock-icon" data-index="2" aria-label="Experience" title="Experience">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="m9 8-4 4 4 4m6-8 4 4-4 4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <button type="button" class="dock-icon" data-index="3" aria-label="Skills" title="Skills">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 8h16v11H4V8Zm4 0V6a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M4 13h16" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <button type="button" class="dock-icon" data-index="4" aria-label="Projects" title="Projects">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="m12 3 2.6 5.9 6.4.6-4.8 4.3 1.4 6.2L12 16.9 6.4 20l1.4-6.2L3 9.5l6.4-.6L12 3Z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <button type="button" class="dock-icon" data-index="5" aria-label="Custom Themes" title="Custom Themes">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="m12 3 9 5-9 5-9-5 9-5Zm-9 9 9 5 9-5M3 16l9 5 9-5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <button type="button" class="dock-icon" data-index="6" aria-label="Process" title="Process">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 6h6v4H4V6Zm10 0h6v4h-6V6ZM4 14h6v4H4v-4Zm10 0h6v4h-6v-4M10 8h4M10 16h4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <button type="button" class="dock-icon" data-index="7" aria-label="Contact" title="Contact">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 6h16v12H4V6Zm0 0 8 7 8-7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+    </nav>
+
+    <!-- Horizontal scroll track -->
+    <div class="track" id="track">
+
+      <!-- 01 Intro -->
+      <section class="slide slide-intro">
+        <div class="dot-grid"></div>
+        <span class="brand-mark">EARL.</span>
+        <div class="reveal intro-reveal">
+          <h1 class="heading-hero">I build fast, thoughtful websites.</h1>
+          <p class="body-text intro-desc">WordPress developer crafting custom themes, plugins, and web experiences focused on performance and clean code.</p>
+          <div class="intro-meta">
+            <span class="badge-status"><span class="dot"></span>Available for work</span>
+            <span class="scroll-hint">Scroll to explore
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14m-6-6 6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+          </div>
+        </div>
+      </section>
+
+      <!-- 02 About -->
+      <section class="slide slide-about">
+        <div class="reveal about-reveal">
+          <div class="about-copy">
+            <p class="eyebrow">About Me</p>
+            <h2 class="heading-lg">Design meets development.</h2>
+            <p class="body-text">I'm a WordPress developer who cares as much about clean, maintainable code as I do about the details users actually notice. I build custom themes and plugins tailored to how a business really works, not just how a page builder assumes it does.</p>
+            <p class="signature">— Earl</p>
+          </div>
+          <div class="about-photo-wrap">
+            <div class="about-photo">
+              <img src="../src/assets/about-photo.jpg" alt="Portrait" onerror="this.parentElement.classList.add('photo-fallback'); this.remove();" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 03 Experience / Timeline -->
+      <section class="slide slide-timeline">
+        <div class="reveal">
+          <p class="eyebrow">Experience</p>
+          <h2 class="heading-lg heading-narrow">Where I've worked.</h2>
+
+          <div class="timeline-track" id="timeline-track">
+            <button type="button" class="timeline-card active" data-card="0">
+              <div class="tc-collapsed">
+                <span class="tc-index">01</span>
+                <div>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" class="tc-icon"><path d="M4 8h16v11H4V8Zm4 0V6a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M4 13h16" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  <p class="tc-role">Senior WordPress Developer</p>
+                  <p class="tc-period">2023 — Present</p>
+                </div>
+              </div>
+              <div class="tc-expanded">
+                <div class="tc-swatch"></div>
+                <span class="tc-index-dim">01</span>
+                <h3 class="tc-title">Senior WordPress Developer</h3>
+                <p class="tc-company">Freelance · 2023 — Present</p>
+                <p class="tc-description">Building custom themes and plugins for clients across e-commerce and publishing.</p>
+              </div>
+            </button>
+
+            <button type="button" class="timeline-card" data-card="1">
+              <div class="tc-collapsed">
+                <span class="tc-index">02</span>
+                <div>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" class="tc-icon"><path d="M4 8h16v11H4V8Zm4 0V6a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M4 13h16" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  <p class="tc-role">WordPress Developer</p>
+                  <p class="tc-period">2021 — 2023</p>
+                </div>
+              </div>
+              <div class="tc-expanded">
+                <div class="tc-swatch"></div>
+                <span class="tc-index-dim">02</span>
+                <h3 class="tc-title">WordPress Developer</h3>
+                <p class="tc-company">Agency Name · 2021 — 2023</p>
+                <p class="tc-description">Led development on custom theme builds and site migrations.</p>
+              </div>
+            </button>
+
+            <button type="button" class="timeline-card" data-card="2">
+              <div class="tc-collapsed">
+                <span class="tc-index">03</span>
+                <div>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" class="tc-icon"><path d="M4 8h16v11H4V8Zm4 0V6a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M4 13h16" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  <p class="tc-role">Junior Developer</p>
+                  <p class="tc-period">2019 — 2021</p>
+                </div>
+              </div>
+              <div class="tc-expanded">
+                <div class="tc-swatch"></div>
+                <span class="tc-index-dim">03</span>
+                <h3 class="tc-title">Junior Developer</h3>
+                <p class="tc-company">Company Name · 2019 — 2021</p>
+                <p class="tc-description">Started out building and maintaining WordPress sites.</p>
+              </div>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- 04 Skills -->
+      <section class="slide slide-skills">
+        <div class="reveal">
+          <p class="eyebrow">Skills &amp; Tools</p>
+          <h2 class="heading-lg heading-narrow">The tools I use to bring ideas to life.</h2>
+
+          <div class="skill-grid">
+            <div class="skill-icon"><span class="skill-swatch" style="background:#21759B"><svg viewBox="0 0 24 24" fill="#fff"><path d="M21.469 6.825c.84 1.537 1.318 3.3 1.318 5.175 0 3.979-2.156 7.456-5.363 9.325l3.295-9.527c.615-1.54.82-2.771.82-3.864 0-.405-.026-.78-.07-1.11m-7.981.105c.647-.03 1.232-.105 1.232-.105.582-.075.514-.93-.067-.899 0 0-1.755.135-2.88.135-1.064 0-2.85-.15-2.85-.15-.585-.03-.661.855-.075.885 0 0 .54.061 1.125.09l1.68 4.605-2.37 7.08L5.354 6.9c.649-.03 1.234-.1 1.234-.1.585-.075.516-.93-.065-.896 0 0-1.746.138-2.874.138-.2 0-.438-.008-.69-.015C4.911 3.15 8.235 1.215 12 1.215c2.809 0 5.365 1.072 7.286 2.833-.046-.003-.091-.009-.141-.009-1.06 0-1.812.923-1.812 1.914 0 .89.513 1.643 1.06 2.531.411.72.89 1.643.89 2.977 0 .915-.354 1.994-.821 3.479l-1.075 3.585-3.9-11.61.001.014zM12 22.784c-1.059 0-2.081-.153-3.048-.437l3.237-9.406 3.315 9.087c.024.053.05.101.078.149-1.12.393-2.325.609-3.582.609M1.211 12c0-1.564.336-3.05.935-4.39L7.29 21.709C3.694 19.96 1.212 16.271 1.211 12M12 0C5.385 0 0 5.385 0 12s5.385 12 12 12 12-5.385 12-12S18.615 0 12 0"/></svg></span><span class="skill-name">WordPress</span></div>
+            <div class="skill-icon"><span class="skill-swatch" style="background:#525DDC"><svg viewBox="0 0 24 24" fill="#fff"><path d="M8.513 12.27L2.6 18.177a.244.244 0 0 1-.174.072l-.02-.001a.248.248 0 0 1-.178-.102 11.973 11.973 0 0 1-.889-1.452.247.247 0 0 1 .045-.287l5.638-5.628a9.403 9.403 0 0 0 2.776-6.694.245.245 0 0 1 .49 0v3.911a6 6 0 0 1-1.774 4.274zM18 .842a.242.242 0 0 0-.245 0 .246.246 0 0 0-.122.212v10.855a6 6 0 0 0 1.773 4.273l1.997 1.995a.246.246 0 0 0 .173.072l.021-.001a.256.256 0 0 0 .18-.102A11.902 11.902 0 0 0 24 11.21c0-4.255-2.298-8.228-6-10.367zM6.367 4.085V1.054A.244.244 0 0 0 6 .842C2.3 2.982 0 6.954 0 11.21c0 .34.018.705.056 1.115.01.094.072.174.161.208a.294.294 0 0 0 .084.014.245.245 0 0 0 .172-.071l4.123-4.118a5.999 5.999 0 0 0 1.771-4.273zm10.614 14.52a9.402 9.402 0 0 1-2.778-6.696V7.996a.245.245 0 1 0-.489 0 9.401 9.401 0 0 1-2.776 6.696l-5.915 5.905a.244.244 0 0 0-.071.193.243.243 0 0 0 .102.18A11.929 11.929 0 0 0 12 23.192a11.93 11.93 0 0 0 6.947-2.222.237.237 0 0 0 .1-.18.239.239 0 0 0-.068-.193l-1.998-1.992Z"/></svg></span><span class="skill-name">Sage</span></div>
+            <div class="skill-icon"><span class="skill-swatch" style="background:#777BB4"><svg viewBox="0 0 24 24" fill="#fff"><path d="M7.01 10.207h-.944l-.515 2.648h.838c.556 0 .97-.105 1.242-.314.272-.21.455-.559.55-1.049.092-.47.05-.802-.124-.995-.175-.193-.523-.29-1.047-.29zM12 5.688C5.373 5.688 0 8.514 0 12s5.373 6.313 12 6.313S24 15.486 24 12c0-3.486-5.373-6.312-12-6.312zm-3.26 7.451c-.261.25-.575.438-.917.551-.336.108-.765.164-1.285.164H5.357l-.327 1.681H3.652l1.23-6.326h2.65c.797 0 1.378.209 1.744.628.366.418.476 1.002.33 1.752a2.836 2.836 0 0 1-.305.847c-.143.255-.33.49-.561.703zm4.024.715l.543-2.799c.063-.318.039-.536-.068-.651-.107-.116-.336-.174-.687-.174H11.46l-.704 3.625H9.388l1.23-6.327h1.367l-.327 1.682h1.218c.767 0 1.295.134 1.586.401s.378.7.263 1.299l-.572 2.944h-1.389zm7.597-2.265a2.782 2.782 0 0 1-.305.847c-.143.255-.33.49-.561.703a2.44 2.44 0 0 1-.917.551c-.336.108-.765.164-1.286.164h-1.18l-.327 1.682h-1.378l1.23-6.326h2.649c.797 0 1.378.209 1.744.628.366.417.477 1.001.331 1.751zM17.766 10.207h-.943l-.516 2.648h.838c.557 0 .971-.105 1.242-.314.272-.21.455-.559.551-1.049.092-.47.049-.802-.125-.995s-.524-.29-1.047-.29z"/></svg></span><span class="skill-name">PHP</span></div>
+            <div class="skill-icon"><span class="skill-swatch" style="background:#F7DF1E"><svg viewBox="0 0 24 24" fill="#0a0a0a"><path d="M0 0h24v24H0V0zm22.034 18.276c-.175-1.095-.888-2.015-3.003-2.873-.736-.345-1.554-.585-1.797-1.14-.091-.33-.105-.51-.046-.705.15-.646.915-.84 1.515-.66.39.12.75.42.976.9 1.034-.676 1.034-.676 1.755-1.125-.27-.42-.404-.601-.586-.78-.63-.705-1.469-1.065-2.834-1.034l-.705.089c-.676.165-1.32.525-1.71 1.005-1.14 1.291-.811 3.541.569 4.471 1.365 1.02 3.361 1.244 3.616 2.205.24 1.17-.87 1.545-1.966 1.41-.811-.18-1.26-.586-1.755-1.336l-1.83 1.051c.21.48.45.689.81 1.109 1.74 1.756 6.09 1.666 6.871-1.004.029-.09.24-.705.074-1.65l.046.067zm-8.983-7.245h-2.248c0 1.938-.009 3.864-.009 5.805 0 1.232.063 2.363-.138 2.711-.33.689-1.18.601-1.566.48-.396-.196-.597-.466-.83-.855-.063-.105-.11-.196-.127-.196l-1.825 1.125c.305.63.75 1.172 1.324 1.517.855.51 2.004.675 3.207.405.783-.226 1.458-.691 1.811-1.411.51-.93.402-2.07.397-3.346.012-2.054 0-4.109 0-6.179l.004-.056z"/></svg></span><span class="skill-name">JavaScript</span></div>
+            <div class="skill-icon"><span class="skill-swatch" style="background:#61DAFB"><svg viewBox="0 0 24 24" fill="#0a0a0a"><path d="M14.23 12.004a2.236 2.236 0 0 1-2.235 2.236 2.236 2.236 0 0 1-2.236-2.236 2.236 2.236 0 0 1 2.235-2.236 2.236 2.236 0 0 1 2.236 2.236zm2.648-10.69c-1.346 0-3.107.96-4.888 2.622-1.78-1.653-3.542-2.602-4.887-2.602-.41 0-.783.093-1.106.278-1.375.793-1.683 3.264-.973 6.365C1.98 8.917 0 10.42 0 12.004c0 1.59 1.99 3.097 5.043 4.03-.704 3.113-.39 5.588.988 6.38.32.187.69.275 1.102.275 1.345 0 3.107-.96 4.888-2.624 1.78 1.654 3.542 2.603 4.887 2.603.41 0 .783-.09 1.106-.275 1.374-.792 1.683-3.263.973-6.365C22.02 15.096 24 13.59 24 12.004c0-1.59-1.99-3.097-5.043-4.032.704-3.11.39-5.587-.988-6.38-.318-.184-.688-.277-1.092-.278z"/></svg></span><span class="skill-name">React</span></div>
+            <div class="skill-icon"><span class="skill-swatch" style="background:#FF2D20"><svg viewBox="0 0 24 24" fill="#fff"><path d="M23.642 5.43a.364.364 0 01.014.1v5.149c0 .135-.073.26-.189.326l-4.323 2.49v4.934a.378.378 0 01-.188.326L9.93 23.949a.316.316 0 01-.066.027c-.008.002-.016.008-.024.01a.348.348 0 01-.192 0c-.011-.002-.02-.008-.03-.012-.02-.008-.042-.014-.062-.025L.533 18.755a.376.376 0 01-.189-.326V2.974c0-.033.005-.066.014-.098.003-.012.01-.02.014-.032a.369.369 0 01.023-.058c.004-.013.015-.022.023-.033l.033-.045c.012-.01.025-.018.037-.027.014-.012.027-.024.041-.034H.53L5.043.05a.375.375 0 01.375 0L9.93 2.647h.002c.015.01.027.021.04.033l.038.027c.013.014.02.03.033.045.008.011.02.021.025.033.01.02.017.038.024.058.003.011.01.021.013.032.01.031.014.064.014.098v9.652l3.76-2.164V5.527c0-.033.004-.066.013-.098.003-.01.01-.02.013-.032a.487.487 0 01.024-.059c.007-.012.018-.02.025-.033.012-.015.021-.03.033-.043.012-.012.025-.02.037-.028.014-.01.026-.023.041-.032h.001l4.513-2.598a.375.375 0 01.375 0l4.513 2.598c.016.01.027.021.042.031.012.01.025.018.036.028.013.014.022.03.034.044.008.012.019.021.024.033.011.02.018.04.024.06.006.01.012.021.015.032z"/></svg></span><span class="skill-name">Blade</span></div>
+            <div class="skill-icon"><span class="skill-swatch" style="background:#06B6D4"><svg viewBox="0 0 24 24" fill="#fff"><path d="M12.001,4.8c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 C13.666,10.618,15.027,12,18.001,12c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C16.337,6.182,14.976,4.8,12.001,4.8z M6.001,12c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 c1.177,1.194,2.538,2.576,5.512,2.576c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C10.337,13.382,8.976,12,6.001,12z"/></svg></span><span class="skill-name">Tailwind</span></div>
+            <div class="skill-icon"><span class="skill-swatch" style="background:#96588A"><svg viewBox="0 0 24 24" fill="#fff"><path d="M.754 9.58a.754.754 0 00-.754.758v2.525c0 .42.339.758.758.758h3.135l1.431.799-.326-.799h2.373a.757.757 0 00.758-.758v-2.525a.757.757 0 00-.758-.758H.754z"/></svg></span><span class="skill-name">WooCommerce</span></div>
+            <div class="skill-icon"><span class="skill-swatch" style="background:#F05032"><svg viewBox="0 0 24 24" fill="#fff"><path d="M13.09 23.549a1.54 1.54 0 0 1-2.18 0L.451 13.089a1.54 1.54 0 0 1 0-2.179l7.191-7.19 2.733 2.733a1.85 1.85 0 0 0 .964 2.326v6.66a1.849 1.849 0 1 0 1.54 0V8.957l2.508 2.508a1.85 1.85 0 1 0 1.09-1.09l-2.634-2.634a1.85 1.85 0 0 0-2.378-2.377L8.73 2.63 10.91.451a1.54 1.54 0 0 1 2.179 0l10.459 10.46a1.54 1.54 0 0 1 0 2.179z"/></svg></span><span class="skill-name">Git</span></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 05 Projects -->
+      <section class="slide slide-projects">
+        <div class="reveal">
+          <p class="eyebrow">Selected Work</p>
+          <h2 class="heading-lg heading-narrow">Some things I've built.</h2>
+
+          <div class="project-track">
+            <a href="#" class="project-card" style="background:linear-gradient(135deg,#14532d,#052e16)">
+              <div class="project-overlay"></div>
+              <div class="project-copy">
+                <p class="project-category">E-Commerce</p>
+                <h3 class="project-title">Storefront Rebuild</h3>
+              </div>
+            </a>
+            <a href="#" class="project-card" style="background:linear-gradient(135deg,#1e3a8a,#0f172a)">
+              <div class="project-overlay"></div>
+              <div class="project-copy">
+                <p class="project-category">Publishing</p>
+                <h3 class="project-title">Editorial Platform</h3>
+              </div>
+            </a>
+            <a href="#" class="project-card" style="background:linear-gradient(135deg,#581c87,#1e1b4b)">
+              <div class="project-overlay"></div>
+              <div class="project-copy">
+                <p class="project-category">Marketing Site</p>
+                <h3 class="project-title">Product Launch</h3>
+              </div>
+            </a>
+          </div>
+
+          <a href="#projects" class="link-arrow">
+            View projects
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14m-6-6 6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </section>
+
+      <!-- 06 Custom Themes -->
+      <section class="slide slide-themes">
+        <div class="reveal about-reveal">
+          <div class="about-copy">
+            <p class="eyebrow">Custom Themes</p>
+            <h2 class="heading-lg">Built from scratch, not a page builder.</h2>
+            <p class="body-text">Every theme is hand-coded around the content model a site actually needs — no bloated builder plugins, no unused CSS shipped to visitors.</p>
+            <div class="tag-list">
+              <span class="tag">WordPress</span>
+              <span class="tag">Sage</span>
+              <span class="tag">Blade</span>
+              <span class="tag">Tailwind CSS</span>
+              <span class="tag">ACF</span>
+            </div>
+          </div>
+          <div class="code-block-wrap">
+            <div class="code-block">
+              <div class="code-dots"><span class="dot-red"></span><span class="dot-yellow"></span><span class="dot-green"></span></div>
+              <pre>@extends('layouts.app')
+
+@section('content')
+  &lt;x-container&gt;
+    &lt;x-hero
+      :title="$title"
+    /&gt;
+  &lt;/x-container&gt;
+@endsection</pre>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 07 Process -->
+      <section class="slide slide-process">
+        <div class="reveal">
+          <p class="eyebrow">How I Work</p>
+          <h2 class="heading-lg heading-narrow">A simple, transparent process.</h2>
+
+          <ol class="process-grid">
+            <li class="process-step">
+              <span class="process-index">01</span>
+              <h3 class="process-title">Discovery</h3>
+              <p class="process-desc">Understand the goals, audience, and content before any design work starts.</p>
+            </li>
+            <li class="process-step">
+              <span class="process-index">02</span>
+              <h3 class="process-title">Design</h3>
+              <p class="process-desc">Wireframes and visual direction, refined together until it feels right.</p>
+            </li>
+            <li class="process-step">
+              <span class="process-index">03</span>
+              <h3 class="process-title">Build</h3>
+              <p class="process-desc">Custom theme development with clean, maintainable, well-documented code.</p>
+            </li>
+            <li class="process-step">
+              <span class="process-index">04</span>
+              <h3 class="process-title">Launch &amp; support</h3>
+              <p class="process-desc">QA, deployment, and ongoing support once the site is live.</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- 08 Contact -->
+      <section class="slide slide-contact">
+        <div class="ring ring-outer"></div>
+        <div class="ring ring-inner"></div>
+
+        <div class="reveal">
+          <p class="eyebrow">Get In Touch</p>
+          <h2 class="heading-lg">Let's build something.</h2>
+          <p class="body-text">Have a project in mind? I'd love to hear about it.</p>
+
+          <ul class="contact-list">
+            <li>✉ hello@example.com</li>
+            <li>📍 Remote</li>
+            <li>⏱ Usually replies within 24 hours</li>
+          </ul>
+
+          <a href="#" class="btn-primary">
+            Say hello
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14m-6-6 6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+
+          <div class="social-row">
+            <a href="#" class="social-icon" aria-label="GitHub" target="_blank" rel="noreferrer">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.34 1.09 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.4 9.4 0 0 1 5 0c1.9-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"/></svg>
+            </a>
+            <a href="#" class="social-icon" aria-label="LinkedIn" target="_blank" rel="noreferrer">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.94 8.5H3.56V21h3.38V8.5ZM5.25 3a1.97 1.97 0 1 0 0 3.94A1.97 1.97 0 0 0 5.25 3ZM21 21h-3.37v-6.4c0-1.53-.03-3.5-2.13-3.5-2.14 0-2.47 1.67-2.47 3.39V21H9.66V8.5H12.9v1.71h.05c.45-.85 1.55-1.75 3.19-1.75 3.41 0 4.04 2.24 4.04 5.16V21Z"/></svg>
+            </a>
+            <a href="#" class="social-icon" aria-label="Instagram" target="_blank" rel="noreferrer">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.2c3.2 0 3.58.01 4.85.07 1.17.05 1.97.24 2.43.4a4.9 4.9 0 0 1 1.78 1.15c.5.5.86 1.05 1.15 1.78.17.46.36 1.26.4 2.43.07 1.27.08 1.65.08 4.85s-.01 3.58-.08 4.85c-.04 1.17-.23 1.97-.4 2.43a4.9 4.9 0 0 1-1.15 1.78 4.9 4.9 0 0 1-1.78 1.15c-.46.17-1.26.36-2.43.4-1.27.07-1.65.08-4.85.08s-3.58-.01-4.85-.08c-1.17-.04-1.97-.23-2.43-.4a4.9 4.9 0 0 1-1.78-1.15 4.9 4.9 0 0 1-1.15-1.78c-.17-.46-.36-1.26-.4-2.43C2.21 15.58 2.2 15.2 2.2 12s.01-3.58.08-4.85c.04-1.17.23-1.97.4-2.43A4.9 4.9 0 0 1 3.83 3c.5-.5 1.05-.86 1.78-1.15.46-.17 1.26-.36 2.43-.4C9.31 1.4 9.68 2.2 12 2.2Zm0 1.8c-3.15 0-3.5.01-4.74.07-.97.04-1.5.2-1.85.34-.46.18-.8.39-1.14.74-.35.34-.56.68-.74 1.14-.14.35-.3.88-.34 1.85-.06 1.24-.07 1.59-.07 4.74s.01 3.5.07 4.74c.04.97.2 1.5.34 1.85.18.46.39.8.74 1.14.34.35.68.56 1.14.74.35.14.88.3 1.85.34 1.24.06 1.59.07 4.74.07s3.5-.01 4.74-.07c.97-.04 1.5-.2 1.85-.34.46-.18.8-.39 1.14-.74.35-.34.56-.68.74-1.14.14-.35.3-.88.34-1.85.06-1.24.07-1.59.07-4.74s-.01-3.5-.07-4.74c-.04-.97-.2-1.5-.34-1.85a3.08 3.08 0 0 0-.74-1.14 3.08 3.08 0 0 0-1.14-.74c-.35-.14-.88-.3-1.85-.34C15.5 4.01 15.15 4 12 4Zm0 3.4a4.6 4.6 0 1 1 0 9.2 4.6 4.6 0 0 1 0-9.2Zm0 1.8a2.8 2.8 0 1 0 0 5.6 2.8 2.8 0 0 0 0-5.6Zm4.8-2.15a1.08 1.08 0 1 1 0 2.15 1.08 1.08 0 0 1 0-2.15Z"/></svg>
+            </a>
+            <a href="#" class="social-icon" aria-label="Dribbble" target="_blank" rel="noreferrer">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm6.9 5.4a8.3 8.3 0 0 1 1.7 4.7 26 26 0 0 0-6-.65 21 21 0 0 0-1-2.7c2.1-.9 3.9-1.9 5.3-3.35Zm-1.35-1.35A15 15 0 0 1 12.9 8.9a24 24 0 0 0-4.3-4.4A8.2 8.2 0 0 1 12 3.8c2 0 3.85.75 5.55 2.25Zm-8.4-1.3a25 25 0 0 1 4.35 4.4c-2.8.85-6 1.15-9.15 1.05a8.3 8.3 0 0 1 4.8-5.45ZM3.8 12v-.2c3.6.1 7.2-.25 10.3-1.25.25.5.5 1 .7 1.55-3.4 1-6.3 2.9-8.5 5.5A8.2 8.2 0 0 1 3.8 12Zm3.75 6.65c2-2.4 4.7-4.15 7.9-5.1.7 2.05 1.15 4.25 1.3 6.55a8.2 8.2 0 0 1-9.2-1.45Zm10.9.55c-.15-2.15-.6-4.2-1.25-6.1a24 24 0 0 1 5.6.55 8.24 8.24 0 0 1-4.35 5.55Z"/></svg>
+            </a>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
